@@ -3,7 +3,7 @@ import {BrowserRouter as Router,Route,Routes,NavLink} from 'react-router-dom';
 import { ContactPage } from './ContactsPage';
 import { AppointmentPage } from './AppointmentPage';
 import { Home } from './Home';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   const [appointments,setAppointments] = useState([]);
 
   const addContact = (name,phoneNum,email) => {
-    setContacts((prev) => [...prev,{ name:name,phoneNum:phoneNum,email:email}])
+    setContacts( [...contacts,{ name:name,phoneNum:phoneNum,email:email}])
   }
   const addAppointment = (title,contact,date,time) => { //start with the contactform tomorrow if possible
 
@@ -50,7 +50,7 @@ function App() {
    <Routes>
     <Route exact path='/' element={<Home  />} />
     <Route exact path='/Contact' element={<ContactPage Contacts={contacts} addContact={addContact}/>} />
-    <Route exact path='/Appointment' element={<AppointmentPage Appointments={appointments} addAppointment={addAppointment}/>} />
+    <Route exact path='/Appointment' element={<AppointmentPage Contacts={contacts} Appointments={appointments} addAppointment={addAppointment}/>} />
    </Routes>
    </Router>
   )

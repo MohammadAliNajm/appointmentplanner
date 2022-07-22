@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react';
 import { ContactForm } from './components/ContactForm';
+import { TileList } from './components/TileList';
 
-export function ContactPage({Contacts,addContact}){
+export function ContactPage({ Contacts,addContact }){
 
      const [name,setName] = useState('');
      const [phoneNum,setPhoneNum] = useState('');
@@ -46,8 +47,12 @@ export function ContactPage({Contacts,addContact}){
      }
 
      return( 
+      <>
      <ContactForm handleSubmit={handleSubmit}  name={name} num={phoneNum} email={email} changeEmail={changeEmail} changeName={changeName} changeNum={changeNum} />
      
+          <TileList tiles={Contacts} />
+          
+          </>
           )
      
     
