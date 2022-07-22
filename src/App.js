@@ -13,7 +13,7 @@ function App() {
   const addContact = (name,phoneNum,email) => {
     setContacts( [...contacts,{ name:name,phoneNum:phoneNum,email:email}])
   }
-  const addAppointment = (title,contact,date,time) => { //start with the contactform tomorrow if possible
+  const addAppointment = (title,contact,date,time) => { 
 
       setAppointments((prev) => [...prev,{title:title,contact:contact,date:date,time:time}])
    }
@@ -49,7 +49,7 @@ function App() {
 
    <Routes>
     <Route exact path='/' element={<Home  />} />
-    <Route exact path='/Contact' element={<ContactPage Contacts={contacts} addContact={addContact}/>} />
+    <Route exact path='/Contact' element={<ContactPage contacts={contacts} addContact={addContact}/>} />
     <Route exact path='/Appointment' element={<AppointmentPage Contacts={contacts} Appointments={appointments} addAppointment={addAppointment}/>} />
    </Routes>
    </Router>
