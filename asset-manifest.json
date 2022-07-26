@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/appointmentplanner/static/css/main.be64c206.css",
+    "main.js": "/appointmentplanner/static/js/main.6468da01.js",
+    "static/js/787.0904cc8b.chunk.js": "/appointmentplanner/static/js/787.0904cc8b.chunk.js",
+    "index.html": "/appointmentplanner/index.html",
+    "main.be64c206.css.map": "/appointmentplanner/static/css/main.be64c206.css.map",
+    "main.6468da01.js.map": "/appointmentplanner/static/js/main.6468da01.js.map",
+    "787.0904cc8b.chunk.js.map": "/appointmentplanner/static/js/787.0904cc8b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be64c206.css",
+    "static/js/main.6468da01.js"
+  ]
+}
