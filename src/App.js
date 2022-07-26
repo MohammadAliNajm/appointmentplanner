@@ -22,7 +22,7 @@ function App() {
 
   return (
     <Router>
-   <nav style={{backgroundColor:'gray',height:70,overflow:'hidden',alignContent:'center'}} >
+   <nav style={{backgroundColor:' #A09791',height:70,overflow:'hidden',alignContent:'center'}} >
     <ul style={{
       display:'flex',
       flexDirection: 'row',
