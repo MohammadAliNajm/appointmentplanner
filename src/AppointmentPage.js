@@ -47,7 +47,6 @@ export function AppointmentPage({ Appointments,Contacts,addAppointment }) {
         changeContact={changeContact} changeDate={changeDate} changeTime={changeTime} changeTitle={changeTitle}
         /> 
         </div>
-
         <div>
                 <h1>Appointments</h1>
 

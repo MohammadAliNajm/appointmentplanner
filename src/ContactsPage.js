@@ -48,8 +48,11 @@ export const ContactPage = ({ contacts, addContact }) => {
 
   return (
     <>
-      <section>
-        <h2 style={{textAlign:"center"}}>
+      <div style={{
+          backgroundColor:"#3170FA",
+        border:'solid #3170FA '
+      }}>
+        <h2 style={{  textAlign:"center",color:"white"}}>
           Add Contact
           {duplicate ? " - Name Already Exists" : ""}
         </h2>
@@ -62,8 +65,8 @@ export const ContactPage = ({ contacts, addContact }) => {
           changeEmail={changeEmail}
           handleSubmit={handleSubmit}
         />
-      </section>
-      <hr />
+      </div>
+      
       <section>
         <h2>Contacts</h2>
         <TileList tiles={contacts} />

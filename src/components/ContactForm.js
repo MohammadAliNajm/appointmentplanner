@@ -18,6 +18,7 @@ export const ContactForm = ({
             onChange={changeName}
             required
             placeholder="Contact Name"
+            className="contactInput"
           />
         </label>
         <br />
@@ -28,8 +29,7 @@ export const ContactForm = ({
             value={phone}
             onChange={changePhone}
             required
-            // regex is for US phone numbers
-            
+            className="contactInput"
             placeholder="Contact Phone (###-###-####)"
           />
         </label>
@@ -42,10 +42,11 @@ export const ContactForm = ({
             onChange={changeEmail}
             required
             placeholder="Contact Email"
+            className="contactInput"
           />
         </label>
         <br />
-        <input type="submit" value="Add Contact" />
+        <input type="submit" value="Add Contact" id="contactSubmit" />
       </form>
     );
   };

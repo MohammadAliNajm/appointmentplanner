@@ -4,7 +4,7 @@ import { Tile } from "./Tile";
 
 export const TileList = ( { tiles } ) => {
   return (
-    <div>
+    <div className="tile">
       {tiles.map((tile, index) => (
         <Tile key={index} tile={tile} />
       ))}

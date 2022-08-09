@@ -28,14 +28,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 .navitems{
   margin-right: 50px;
@@ -50,4 +43,31 @@
   height: 25px;
   border-radius: 5px;
   border: none;
+}
+.contactInput{
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius:20px;
+  margin-top: 5px;
+}
+#contactSubmit{
+  width: 150px;
+  height: 25px;
+  margin: 5px;
+  border: none;
+  border-radius:5px ;
+  background-color: white;
+
+}
+#contactSubmit:hover{
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #FABB33;
+}
+.tile-container{
+  border: solid;
+  border-radius: 5px;
+  background-color: #FABB33;
+  text-align: center;
 }

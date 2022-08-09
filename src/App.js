@@ -22,13 +22,13 @@ function App() {
 
   return (
     <Router>
-   <nav style={{backgroundColor:' #A09791',height:70,overflow:'hidden',alignContent:'center'}} >
+   <nav style={{backgroundColor:' #FABB33',height:80,overflow:'hidden',alignContent:'center'}} >
     <ul style={{
       display:'flex',
       flexDirection: 'row',
       alignItems:'center',
-      listStyle:'none'
-     
+      listStyle:'none',
+      
       
    }}>
       <li className='navitems'>
@@ -46,7 +46,6 @@ function App() {
 
 
    </nav>
-
    <Routes>
     <Route exact path='/' element={<Home  />} />
     <Route exact path='/Contact' element={<ContactPage contacts={contacts} addContact={addContact}/>} />

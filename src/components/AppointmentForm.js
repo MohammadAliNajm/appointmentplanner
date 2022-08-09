@@ -29,10 +29,10 @@ export function AppointmentForm(props){
         fontSize:18
       
       }}>
-              Title:<br/>  <input className="Ain" name="title" type="text" value={props.title} placeholder="Enter Appointment Title" onChange={props.changeTitle} /><br />
-               Date:<br/> <input className="Ain" name="date" type="date" min={x} value={props.date}  onChange={props.changeDate} /><br />
-              Time:<br/>  <input className="Ain" name="time" value={props.time}  onChange={props.changeTime} placeholder="Enter time"/><br />
-                <ContactPicker   onChange={props.changeContact} Contacts={props.Contacts} />
+              Title:<br/>  <input className="Ain" name="title" type="text" value={props.title} placeholder="Enter Appointment Title" onChange={props.changeTitle} required/><br />
+               Date:<br/> <input className="Ain" name="date" type="date" min={x} value={props.date}  onChange={props.changeDate} required /><br />
+              Time:<br/>  <input className="Ain" name="time" value={props.time}  onChange={props.changeTime} placeholder="Enter time" required/><br />
+                <ContactPicker   onChange={props.changeContact} Contacts={props.Contacts} required />
                 <input type="submit" />
                 </div>
         </form>
