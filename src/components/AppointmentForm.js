@@ -13,7 +13,7 @@ export function AppointmentForm(props){
      <form onSubmit={props.handleSubmit}  style={{
       display:"flex",
       justifyContent:"center",
-      backgroundColor:"#EC651B",
+      backgroundColor:"#3170FA",
       padding:10
       
 
@@ -23,7 +23,7 @@ export function AppointmentForm(props){
         width:300,
         padding:5,
         textAlign:"center",
-        backgroundColor:"#A09791",
+        backgroundColor:"#FABB33",
         borderRadius:5,
         fontFamily:'monospace',
         fontSize:18

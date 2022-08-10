@@ -3,8 +3,8 @@ export function ContactPicker(props) {
 
     return( 
     <>
-        <select>
-            <option value="select contact">select contact</option>
+        <select style={{width:'100px'}} required>
+        
             {props.Contacts.map((contact) => {  return <option>{contact.name}</option>})}
         </select>
 

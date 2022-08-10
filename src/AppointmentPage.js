@@ -39,7 +39,7 @@ export function AppointmentPage({ Appointments,Contacts,addAppointment }) {
 
        return(
         <>
-        <div>
+        <div style={{backgroundColor:'#3170FA',border: 'solid #3170FA'}}>
                
         <h1>Add Appointment</h1>
         
