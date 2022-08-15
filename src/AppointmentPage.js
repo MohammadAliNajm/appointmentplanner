@@ -6,7 +6,7 @@ import { AppointmentForm } from "./components/AppointmentForm";
 
 export function AppointmentPage({ Appointments,Contacts,addAppointment }) {
         const [title,setTitle]=useState('');
-        const [contact,setContact] = useState();
+        const [contact,setContact] = useState('');
         const [date,setDate] = useState();
         const [time,setTime] = useState();
 

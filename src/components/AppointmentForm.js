@@ -9,6 +9,11 @@ export function AppointmentForm(props){
     let  now = d.toLocaleDateString();
     let date = now.split("/");
     let x = `${date[0].padStart(2,"0")}-${date[1].padStart(2,"0")}-${date[2]}`;
+
+    const getContactNames = () => {
+      return props.Contacts.map((contact) => contact.name);
+    };
+  
    return(
      <form onSubmit={props.handleSubmit}  style={{
       display:"flex",
@@ -32,7 +37,7 @@ export function AppointmentForm(props){
               Title:<br/>  <input className="Ain" name="title" type="text" value={props.title} placeholder="Enter Appointment Title" onChange={props.changeTitle} required/><br />
                Date:<br/> <input className="Ain" name="date" type="date" min={x} value={props.date}  onChange={props.changeDate} required /><br />
               Time:<br/>  <input className="Ain" name="time" value={props.time}  onChange={props.changeTime} placeholder="Enter time" required/><br />
-                <ContactPicker   onChange={props.changeContact} Contacts={props.Contacts} required />
+                <ContactPicker   onChange={props.changeContact} Contacts={getContactNames()} required />
                 <input type="submit" />
                 </div>
         </form>
